@@ -19,10 +19,13 @@
     <Filter Include="源文件\第3章">
       <UniqueIdentifier>{b8c98c82-6371-4f0d-8f2d-7a08cec72e8e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第4章">
+      <UniqueIdentifier>{3d803ad3-8955-49ce-83af-86bfca8172b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3-5.c">
-      <Filter>源文件\第3章</Filter>
+    <ClCompile Include="4-5.c">
+      <Filter>源文件\第4章</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
