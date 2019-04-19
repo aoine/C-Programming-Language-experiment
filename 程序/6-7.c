@@ -35,8 +35,27 @@ int main()
 					break;
 			}
 		}
-	for (i = 0; i < 5; i++)
-		h = h + a[i][i];
-	printf("\n\n主对角线之为 %d \n\n\n", h);
+	for (n = 0; n < 5; n++)
+	{
+		for (m = n; m < 5; m++)
+		{
+			h = a[m][n];
+			a[m][n] = a[n][m];
+			a[n][m] = h;
+		}
+	}
+	printf("\n\n互换后 \n");
+	for (n = 0,x=1; n < 5; n++)
+		for (m = 0; m < 5; m++)
+		{
+			printf("%d\t", a[n][m]);
+			if (x % 5 == 0)
+				printf("\n");
+			x++;
+		}
 	return 0;
 }
+
+
+
+

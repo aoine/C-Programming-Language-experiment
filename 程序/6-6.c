@@ -35,8 +35,11 @@ int main()
 					break;
 			}
 		}
-	for (i = 0; i < 5; i++)
-		h = h + a[i][i];
-	printf("\n\n主对角线之为 %d \n\n\n", h);
+	for (n = 0; n < 5; n++)
+		for (m = 0; m <= n; m++)
+		{
+			h = h + a[n][m];
+		}
+	printf("\n\n下三角之和为 %d\n\n", h);
 	return 0;
 }
