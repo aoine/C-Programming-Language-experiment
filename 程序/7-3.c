@@ -31,6 +31,12 @@ int zdgsy(int x,int y)
 	}
 	return a;
 }
+int zxgbs(int x, int y, int z)
+{
+	int a;
+	a = (x * y) / z;
+	return a;
+}
 
 int main()
 {
@@ -38,7 +44,9 @@ int main()
 	int x, y, scgys, scgbs;
 	scanf_s("%d%d", &x, &y);
 	scgys = zdgsy(x, y);
-	printf("\n最大公约数为 %d\n\n", scgys);
+	printf("\n最大公约数为 %d\n", scgys);
+	scgbs = zxgbs(x, y, scgys);
+	printf("\n最小公倍数为 %d\n\n", scgbs);
 
 	return 0;
 }
