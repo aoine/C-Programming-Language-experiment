@@ -1,5 +1,5 @@
 #include<stdio.h>	
-int zdgsy(int x,int y)
+int zdgys(int x,int y)
 {
 	int x1, y1, i , i1 , a=0;
 	int gys[2][1000];
@@ -37,13 +37,24 @@ int zxgbs(int x, int y, int z)
 	a = (x * y) / z;
 	return a;
 }
-
+int zdgys1(int x, int y)
+{
+	int z=0;
+	for  ( ; ; )
+	{
+		z = x % y;
+		if (z == 0)
+			return y;
+		x = y;
+		y = z;
+	}
+}
 int main()
 {
 	int zdgys(int x, int y);
 	int x, y, scgys, scgbs;
 	scanf_s("%d%d", &x, &y);
-	scgys = zdgsy(x, y);
+	scgys = zdgys(x, y);
 	printf("\n最大公约数为 %d\n", scgys);
 	scgbs = zxgbs(x, y, scgys);
 	printf("\n最小公倍数为 %d\n\n", scgbs);
