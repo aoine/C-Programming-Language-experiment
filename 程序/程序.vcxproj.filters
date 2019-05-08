@@ -28,10 +28,13 @@
     <Filter Include="源文件\第7章">
       <UniqueIdentifier>{47272f1d-ebef-4af5-adc6-9e39aee335eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第9章">
+      <UniqueIdentifier>{385c0f9a-b750-4206-bbe5-09628bf7d3a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7-3.c">
-      <Filter>源文件\第7章</Filter>
+    <ClCompile Include="9-3-5.c">
+      <Filter>源文件\第9章</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
