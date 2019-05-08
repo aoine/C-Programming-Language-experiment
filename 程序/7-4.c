@@ -5,6 +5,7 @@ void pdsc(int a[10])
 	for ( x = 0; x < 10; x++)
 	{
 		min = a[x];
+		z1=-1;
 		for ( y = x+1; y < 10; y++)
 		{
 			if (a[y] < min)
@@ -15,9 +16,11 @@ void pdsc(int a[10])
 		}
 		z = a[x];
 		a[x] = min;
-		a[z1] = z;
-
+		if( z1 != -1)
+			a[z1] = z;
 	}
+	for( x = 0; x < 10; x++)
+		printf("%d\t", a[x]);
 }
 int main()
 {
@@ -27,6 +30,8 @@ int main()
 	{
 		scanf_s("%d", &a[i]);
 	}
-	pdsc(a);
+	printf("\n\n\n");
+	pdsc( a );
+	printf("\n\n\n");
 	return 0;
 }
