@@ -34,7 +34,7 @@ int main()
 	s2 = &str2;
 	scanf("%s", s1);
 	scanf("%s", s2);
-	i = strcompare(*s1, *s2);
+	i = strcompare(*s1, *s2);		//只能传过去一个
 	printf("\n%d\n", i);
 	return 0;
 }
