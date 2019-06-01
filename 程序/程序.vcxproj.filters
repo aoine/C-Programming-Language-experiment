@@ -36,8 +36,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="230-2-3.c">
-      <Filter>源文件\理论教材</Filter>
+    <ClCompile Include="5-5(g).c">
+      <Filter>源文件\第5章</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
